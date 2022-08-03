@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.js": "/static/js/main.c1781625.js",
+    "static/media/logo.jpg": "/static/media/logo.d7e13d32086cbe4c9dd4.jpg",
+    "static/media/tech Women.png": "/static/media/tech Women.7513ac4d8344df81a81a.png",
+    "static/media/Ayesha.jpeg": "/static/media/Ayesha.1ea0b6ab600b9a6db53b.jpeg",
+    "static/media/ada.jpg": "/static/media/ada.1942fa7fd1edeaf4f5cd.jpg",
+    "static/media/grace.jpg": "/static/media/grace.73692b4d6b24805c310f.jpg",
+    "static/media/hedy.jpg": "/static/media/hedy.e3ab3281581259114b1b.jpg",
+    "static/media/Online Bnaking.avif": "/static/media/Online Bnaking.50aedff4f4c03208c010.avif",
+    "static/media/FaceRecognition.jfif": "/static/media/FaceRecognition.6fec391c46dc7c224830.jfif",
+    "index.html": "/index.html",
+    "main.c1781625.js.map": "/static/js/main.c1781625.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.c1781625.js"
+  ]
+}
