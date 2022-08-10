@@ -1,27 +1,17 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import ContactItem from "../Components/ContactItem";
-import PrimaryButton from "../Components/PrimaryButton";
 import Title from "../Components/Title";
 import { InnerLayout, MainLayout } from "../styles/Layouts";
 import { Email, Home, PhoneInTalk } from "@material-ui/icons";
-
 function Contact() {
-  const [msg, setMsg] = useState({
-    name: "",
-    phone: "",
-    subject: "",
-  });
-
-  const handleChange = (event) => {
-    let name = event.target.name;
-    let value = event.target.value;
-    setMsg({ ...msg, [name]: value });
-  };
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
 
   const handleSubmit = async (event) => {
+    console.log(name, email, subject);
     event.preventDefault();
-    const { name, phone, subject } = msg;
     try {
       const res = await fetch("http://localhost:5000/contacts", {
         method: "POST",
@@ -30,19 +20,18 @@ function Contact() {
         },
         body: JSON.stringify({
           name,
-          phone,
+          email,
           subject,
         }),
       });
+      console.log(res);
       if (res.status === 400 || !res) {
         window.alert("Message not sent, try again later");
       } else {
         window.alert("Message Sent");
-        setMsg({
-          name: "",
-          phone: "",
-          subject: "",
-        });
+        setName("");
+        setEmail("");
+        setSubject("");
       }
     } catch (error) {
       console.log(error);
@@ -51,7 +40,7 @@ function Contact() {
 
   const phone = <PhoneInTalk />;
   const home = <Home />;
-  const email = <Email />;
+  const emailI = <Email />;
   return (
     <MainLayout>
       <Title title={"Contact"} span={"Contact"} />
@@ -61,15 +50,17 @@ function Contact() {
             <div className="contact-title">
               <h4>Get in Touch</h4>
             </div>
-            <form className="form" onSubmit={handleSubmit} method="POST">
+            <form className="form">
               <div className="form-filling">
                 <label htmlFor="name">Enter your Name</label>
                 <input
                   type="text"
                   id="name"
                   name="name"
-                  value={msg.name}
-                  onChange={handleChange}
+                  value={name}
+                  onChange={(e) => {
+                    setName(e.target.value);
+                  }}
                 />
               </div>
               <div className="form-filling">
@@ -77,9 +68,11 @@ function Contact() {
                 <input
                   type="email"
                   id="email"
-                  name="phone"
-                  value={msg.phone}
-                  onChange={handleChange}
+                  name="email"
+                  value={email}
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                  }}
                 />
               </div>
               <div className="form-filling">
@@ -88,12 +81,20 @@ function Contact() {
                   type="text"
                   id="subject"
                   name="subject"
-                  value={msg.subject}
-                  onChange={handleChange}
+                  value={subject}
+                  onChange={(e) => {
+                    setSubject(e.target.value);
+                  }}
                 />
               </div>
               <div className="form-filling f-button">
-                <PrimaryButton title={"Send"} type="submit" />
+                <button
+                  type="submit"
+                  onClick={handleSubmit}
+                  className="submitButton"
+                >
+                  Send
+                </button>
               </div>
             </form>
           </div>
@@ -104,7 +105,7 @@ function Contact() {
               contact={"+91-7489171187"}
             />
             <ContactItem
-              icon={email}
+              icon={emailI}
               title={"Email"}
               contact={"fizaayesha696@gmail.com"}
             />
@@ -178,6 +179,31 @@ const ContactStyled = styled.section`
           color: inherit;
           width: 100%;
           padding: 0.8rem 1rem;
+        }
+      }
+      .submitButton {
+        background-color: var(--primary-color);
+        padding: 0.6rem 1rem;
+        cursor: pointer;
+        color: white;
+        display: inline-block;
+        font-size: 1rem;
+        position: relative;
+        transition: all 0 0.4s ease-in;
+        &:after {
+          content: "";
+          position: absolute;
+          width: 0;
+          height: 0.2rem;
+          transition: all 0.4s ease-in-out;
+          left: 0;
+          bottom: 0;
+          opacity: 0.9;
+        }
+        &:hover::after {
+          width: 100%;
+          background-color: var(--white-color);
+          font-weight: 500;
         }
       }
     }
