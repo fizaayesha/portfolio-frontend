@@ -2,12 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import logo from "../Assets/Ayesha.jpeg";
+import logo2 from "../Assets/Ayesha2.jpeg"
 function Navbar() {
   // const portfolio = <LaptopSharp/>
   return (
     <NavbarStyles>
       <div className="avatar">
-        <img src={logo} alt="avatar" />
+        <img src={logo2} alt="avatar" />
       </div>
       <ul className="nav-items">
         <li className="nav-item">
