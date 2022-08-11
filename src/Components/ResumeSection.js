@@ -34,7 +34,7 @@ function ResumeSection() {
             }
           />
           <ResumeItem
-            year={"March'2022-Present"}
+            year={"March'2022-August'2022"}
             title={"Web Developement Volunteer"}
             subTitle={"Aaghaaz-e-Taleem, New Delhi"}
             text={
