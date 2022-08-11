@@ -13,7 +13,7 @@ function Contact() {
     console.log(name, email, subject);
     event.preventDefault();
     try {
-      const res = await fetch("http://localhost:5000/contacts", {
+      const res = await fetch(`${process.env.REACT_APP_SERVER_URL}/contact`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
