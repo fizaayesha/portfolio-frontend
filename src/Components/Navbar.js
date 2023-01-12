@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
-import logo2 from "../Assets/Ayesha2.jpeg";
+import logo2 from "../Assets/Ayesha.jpg";
 function Navbar() {
   // const portfolio = <LaptopSharp/>
   return (

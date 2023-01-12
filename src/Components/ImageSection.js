@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Ayesha from "../Assets/Ayesha.jpeg";
+import Ayesha from "../Assets/Ayesha.jpg";
 import PrimaryButton from "./PrimaryButton";
 
 function ImageSection() {
