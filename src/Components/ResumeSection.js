@@ -18,7 +18,22 @@ function ResumeSection() {
         </div>
         <div className="resume-content">
           <ResumeItem
-            year={"May'2022-Present"}
+            year={"June'2023-July'2023"}
+            title={"Software Engineering Internship"}
+            subTitle={"MICROSOFT, Hyderabad, Telangana"}
+            text={
+              "Worked with Visio Team in one of the largest repository:- Optimized Shape Panel by removing Preview Card & Implemented Direct License Benefit Screen appearance. Developed Discovery Hooks for seamless integration with the Visio Desktop App."}
+          />
+          <ResumeItem
+            year={"May'2022-July'2023"}
+            title={"Chairperson"}
+            subTitle={"ACM-W JMI, New Delhi"}
+            text={
+              "Chaired ACM-W JMI, boosting women’s tech involvement via events, workshops, partnerships."
+            }
+          />
+          <ResumeItem
+            year={"May'2022-July'2023"}
             title={"Technial Head"}
             subTitle={"ACM-W JMI, New Delhi"}
             text={
@@ -42,7 +57,15 @@ function ResumeSection() {
             }
           />
           <ResumeItem
-            year={"March'2022-Present"}
+            year={"September'2022-August'2023"}
+            title={"Cloud Computing Team Member"}
+            subTitle={"GDSC JMI, New Delhi"}
+            text={
+              "Contributed with the team"
+            }
+          />
+          <ResumeItem
+            year={"March'2022-September2022"}
             title={"Web Developer"}
             subTitle={"IEEECS JMI, New Delhi"}
             text={
@@ -69,7 +92,7 @@ function ResumeSection() {
           <ResumeItem
             year={"2015-2017"}
             title={"Senior Secondary School"}
-            subTitle={"DAV Mukhya Mantri Public School, Raigarh, (C.G.)"}
+            subTitle={"DAV Mukhya Mantri Public School, Dharamjaigarh, Raigarh, (C.G.)"}
           />
         </div>
       </InnerLayout>

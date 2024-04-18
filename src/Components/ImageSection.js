@@ -14,13 +14,13 @@ function ImageSection() {
           I am <span>Ayesha Khan</span>
         </h4>
         <p className="paragraph">
-          I am 2<sup style={{ fontSize: ".8rem" }}>nd</sup> year Electrical
+          I am a final year Electrical
           Engineering student from Jamia Millia Islamia, New Delhi. Highly
-          interested in technical field. From the past few months I started
+          interested in technical field. From the past few years I started
           learning techinal skills. Currently learning Backend Web Developement
           and Data Structure and Algorithms, also enhancing Frontend
           Developement skills. Whenever I learned a new skill, it boosts my
-          confidence.
+          confidence. I have done Software Engineering Internship at Microsoft
         </p>
         <div className="about-info">
           <div className="info-title">
@@ -38,7 +38,7 @@ function ImageSection() {
             <p>: Raigarh, Chattisgarh</p>
           </div>
         </div>
-        <a href="https://links.cuvette.tech/student/62682541560dedda80c0cfd2">
+        <a href="https://drive.google.com/file/d/1bi77JagleVehdKteWTWI4L7DlM_8H0Kv/view">
           <PrimaryButton title={"Download Cv"} />
         </a>
       </div>
