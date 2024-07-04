@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.e6eadf0f.js",
+    "main.js": "/static/js/main.4bebef3c.js",
     "static/media/Ayesha.jpg": "/static/media/Ayesha.b8c72ee53530ab465b05.jpg",
     "static/media/dbms.png": "/static/media/dbms.ac4aa586b6de6b496609.png",
     "static/media/blogs.png": "/static/media/blogs.da2078628cacb57e1ad8.png",
@@ -10,12 +10,13 @@
     "static/media/ada.jpg": "/static/media/ada.1942fa7fd1edeaf4f5cd.jpg",
     "static/media/grace.jpg": "/static/media/grace.73692b4d6b24805c310f.jpg",
     "static/media/hedy.jpg": "/static/media/hedy.e3ab3281581259114b1b.jpg",
+    "static/media/list.jpeg": "/static/media/list.bf248e4917aa4908f67e.jpeg",
     "static/media/Online Bnaking.avif": "/static/media/Online Bnaking.50aedff4f4c03208c010.avif",
     "static/media/FaceRecognition.jfif": "/static/media/FaceRecognition.6fec391c46dc7c224830.jfif",
     "index.html": "/index.html",
-    "main.e6eadf0f.js.map": "/static/js/main.e6eadf0f.js.map"
+    "main.4bebef3c.js.map": "/static/js/main.4bebef3c.js.map"
   },
   "entrypoints": [
-    "static/js/main.e6eadf0f.js"
+    "static/js/main.4bebef3c.js"
   ]
 }
