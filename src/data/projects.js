@@ -3,7 +3,9 @@ import Banking from "../Assets/Online Bnaking.avif";
 import Pokemon from "../Assets/pokemon.avif";
 import Blogs from "../Assets/blogs.png";
 import dbms from "../Assets/dbms.png";
+import list from "../Assets/list.jpeg"
 import portfolio from "../Assets/portfolio.png";
+
 
 const projects = [
   {
@@ -51,6 +53,14 @@ const projects = [
   },
   {
     id: 6,
+    category: "IOS",
+    image: list,
+    code: "https://github.com/fizaayesha/list-app-ios",
+    title: "My List App",
+    text: "Manage and organize your tasks effortlessly with our intuitive list app."
+  },
+  {
+    id: 7,
     category: "Frontend",
     image: portfolio,
     code: "https://github.com/fizaayesha/portfolio",
